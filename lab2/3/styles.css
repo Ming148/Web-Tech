@@ -1,0 +1,40 @@
+body {
+    width: 100vh;
+    color: white;
+}
+
+.bar1 {
+    width: 60%;
+    height: 25px;
+    background-color: red;
+}
+
+.bar2 {
+    width: 90%;
+    height: 25px;
+    background-color: blue;
+}
+
+.bar3 {
+    width: 80%;
+    height: 25px;
+    background-color: green;
+}
+
+.bar4{
+    width: 70%;
+    height: 25px;
+    background-color: gray;
+}
+
+.bar5{
+    width: 60%;
+    height: 25px;
+    background-color: greenyellow;
+}
+
+p{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}

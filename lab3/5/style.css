@@ -1,0 +1,45 @@
+body {
+    background: lightskyblue;
+    font-family: 'Prompt', sans-serif; 
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.form-container,
+.card-container {
+    padding: 2vw;
+    width: 30vw;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #003865;
+    color: azure;
+}
+
+.card-container {
+    margin-left: 5vw;
+}
+
+.card {
+    height: 40%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #003865, #D4F6CC);
+    color: azure;
+}

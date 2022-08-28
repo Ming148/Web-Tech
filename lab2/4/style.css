@@ -1,0 +1,33 @@
+body {
+    font-family: 'Mitr', sans-serif;
+    background-image: linear-gradient(#D61C4E, #293462);
+    color: #1CD6CE;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sii {
+    color: #FEDB39;
+}
+
+table {
+    position: relative;
+    margin-left: 40%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 2px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+}

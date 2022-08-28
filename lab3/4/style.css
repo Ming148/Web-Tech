@@ -1,0 +1,59 @@
+body{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.container {
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar1 {
+    width: 10%;
+    background-color: #4CAF50;
+    transition: 2s;
+}
+
+.bar2 {
+    width: 10%;
+    margin-top: 10px;
+    background-color: #2196F3;
+    transition: 2s;
+}
+
+.bar3 {
+    width: 10%;
+    margin-top: 10px;
+    background-color: #f44336;
+    transition: 2s;
+}
+
+.bar4 {
+    width: 10%;
+    margin-top: 10px;
+    background-color: #e91e63;
+    transition: 2s;
+}
+
+.bar5 {
+    width: 10%;
+    margin-top: 10px;
+    background-color: #9c27b0;
+    transition: 2s;
+}
+
+button {
+    width: 10%;
+    margin-top: 20px;
+}
