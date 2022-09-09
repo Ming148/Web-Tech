@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <label id="FirstName">ชื่อ : </label>
+        <input type="text" class="FirstName"><br>
+        <label id="LastName">นามสกุล : </label>
+        <input type="text" class="LastName"><br>
+        <label id="Country">ประเทศ : </label>
+        <select name="country" id="list">
+            <option value="000" selected>เลือกประเทศ</option>
+            <option value="001">ไทย</option>
+            <option value="002">เวียดนาม</option>
+            <option value="003">ลาว</option>
+            <option value="004">มาเลเซีย</option>
+            <option value="005">สิงคโปร์</option>
+            <option value="006">ฟิลิปปินส์</option>
+            <option value="007">เมียนมาร์</option>
+            <option value="008">กัมพูชา</option>
+            <option value="009">บรูไน</option>
+        </select><br>
+        <button id="btn" type="button" onclick="changelanguage()" class="th">Change to English</button><br>
+    </div>
+</body>
+
+</html>

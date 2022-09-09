@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let requestURL = 'movies.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                ExtractData(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+
+        function ExtractData(data) {
+            for (let i = 0; i < data.movies.showing.length; i++) {
+                // code
+                let movie = document.createElement('div');
+                movie.classList.add('movie');
+
+                // movie poster image
+                let poster = document.createElement('div');
+                poster.classList.add('poster');
+                var pic = document.createElement("img");
+                pic.src = data.movies.showing[i].poster;
+                poster.appendChild(pic);
+                movie.appendChild(poster);
+                document.getElementById('showing').appendChild(movie);
+
+                // movie title_th
+                let title_th = document.createElement('div');
+                title_th.classList.add('title_th');
+                let txt = document.createElement("h4");
+                txt.innerHTML = data.movies.showing[i].title_th;
+                title_th.appendChild(txt);
+                movie.appendChild(title_th);
+
+                //moive release date
+                let release_date = document.createElement('div');
+                release_date.classList.add('release_date');
+                let txt2 = document.createElement("p");
+                txt2.innerHTML = "Release Date : " + data.movies.showing[i].releasedate;
+                release_date.appendChild(txt2);
+                movie.appendChild(release_date);
+
+                //button
+                let button = document.createElement('button');
+                button.innerHTML = "เช็ครอบภาพยนตร์";
+                movie.appendChild(button);
+
+            }
+
+            for (let i = 0; i < data.movies.comingsoon.length; i++) {
+                // code
+                let movie = document.createElement('div');
+                movie.classList.add('movie');
+
+                // movie poster image
+                let poster = document.createElement('div');
+                poster.classList.add('poster');
+                var pic = document.createElement("img");
+                pic.src = data.movies.comingsoon[i].poster;
+                poster.appendChild(pic);
+                movie.appendChild(poster);
+                document.getElementById('coming').appendChild(movie);
+
+                // movie title_th
+                let title_th = document.createElement('div');
+                title_th.classList.add('title_th');
+                let txt = document.createElement("h4");
+                txt.innerHTML = data.movies.comingsoon[i].title_th;
+                title_th.appendChild(txt);
+                movie.appendChild(title_th);
+
+                //moive release date
+                let release_date = document.createElement('div');
+                release_date.classList.add('release_date');
+                let txt2 = document.createElement("p");
+                txt2.innerHTML = "Release Date : " + data.movies.comingsoon[i].releasedate;
+                release_date.appendChild(txt2);
+                movie.appendChild(release_date);
+
+                //button
+                let button = document.createElement('button');
+                button.innerHTML = "เช็ครอบภาพยนตร์";
+                movie.appendChild(button);
+
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="txt">
+        <h1>Now showing</h1>
+    </div>
+    <div class="showing" id="showing"></div>
+    <div class="txt">
+        <h1>Coming soon</h1>
+    </div>
+    <div class="coming" id="coming"></div>
+</body>
+
+</html>

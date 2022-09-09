@@ -1,0 +1,66 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(#B9FFF8, #FF4A4A);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.showing {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 5vh;
+
+}
+
+.coming {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.movie {
+    width: 250px;
+    height: 410px;
+    background-color: #6FEDD6;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.movie:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+img {
+    margin-top: -30px;
+    width: 175px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    background-color: #FEF5AC;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.txt{
+    margin-top: 2vh;
+}

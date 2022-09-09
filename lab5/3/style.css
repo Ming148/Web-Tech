@@ -1,0 +1,19 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+img {
+    width: auto;
+    height: 150px;
+    margin: auto;
+    border: 1px solid black;
+
+}
+
+.col{
+    display: flex;
+}
+
+.row{
+    width: 40vw;
+}
