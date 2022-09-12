@@ -2,17 +2,16 @@ body {
     font-family: 'Kanit', sans-serif;
     background-image: linear-gradient(#B9FFF8, #FF4A4A);
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    /* overflow: scroll; */
 }
 
 .showing {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
-    flex-flow: wrap;
-    align-content: space-between;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
     margin-top: 5vh;
 
 }
@@ -22,8 +21,8 @@ body {
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    align-content: space-between;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: space-around;
     margin-top: 5vh;
 }
 
@@ -35,12 +34,14 @@ body {
     border-radius: 10px;
     text-align: center;
     align-items: center;
-    margin: auto;
+    margin-top: 5vh;
 }
 
 .movie:hover {
     scale: 1.05;
     transition: 0.5s;
+    background-color: #FF4A4A;
+    color: white;
 }
 
 img {
@@ -61,6 +62,8 @@ button {
     cursor: pointer;
 }
 
-.txt{
-    margin-top: 2vh;
+.txt {
+    margin-top: 5vh;
+    height: auto;
+    width: 100%;
 }
