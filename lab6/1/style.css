@@ -1,0 +1,30 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+.c-language {
+    padding: auto;
+    float: left;
+    width: 30%;
+}
+
+.python-language {
+    padding: auto;
+    float: left;
+    width: 30%;
+}
+
+.java-language {
+    padding: auto;
+    float: left;
+    width: 30%;
+}
+
+@media screen and (max-width:400px) {
+
+    .c-language,
+    .python-language,
+    .java-language {
+        width: 100%;
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    padding: 10px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+.list-group{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+.pic-huTao {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: #734949;
+    color: #F2D399;
+    text-align: center;
+    float: left;
+}
+
+.pic-huTao:hover {
+    background-color: #F2D399;
+    color: #734949;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.pic-yaeMiko {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: #7C3042;
+    color: #f9cdd4;
+    text-align: center;
+    float: left;
+}
+
+.pic-yaeMiko:hover {
+    background-color: #f9cdd4;
+    color: #7C3042;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.pic-yelan {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: #2b36a4;
+    color: #75bedd;
+    text-align: center;
+    float: left;
+}
+.pic-yelan:hover {
+    background-color: #75bedd;
+    color: #2b36a4;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.pic-eula {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: #486081;
+    color: #F0F5F6;
+    text-align: center;
+    float: left;
+}
+.pic-eula:hover {
+    background-color: #F0F5F6;
+    color: #486081;
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:600px) {
+
+    .pic-huTao,
+    .pic-yaeMiko,
+    .pic-yelan,
+    .pic-eula {
+        width: 100%;
+    }
+}
