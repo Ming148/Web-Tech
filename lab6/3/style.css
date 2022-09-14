@@ -2,13 +2,10 @@
     font-family: 'Prompt', sans-serif;
 }
 
-.col-lg {
+.h {
     background-color: aliceblue;
     padding: 20px; 
     font-size: 18px; 
     margin-bottom: 20px; 
 }
 
-.col {
-    padding: 30px; 
-}
