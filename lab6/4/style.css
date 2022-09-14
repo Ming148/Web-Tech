@@ -2,17 +2,19 @@
     font-family: 'Kanit', sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
+    background-color: black;
 }
 
 header {
-    background-color: aliceblue;
+    background-color: gold;
     padding: 30px;
     text-align: center;
     font-weight: bold;
 }
 
 h1 {
-    background: white;
+    background: red;
 }
 
 .container {
@@ -30,7 +32,7 @@ ul {
     gap: 10px;
 }
 
-h3 {
+.box {
     display: block;
     padding: 1em 4em;
     font-weight: 500;
@@ -39,6 +41,7 @@ h3 {
 }
 a {
     color: gold;
+    background-color: #FF1900;
 }
 
 h2 {
@@ -52,18 +55,19 @@ h2 {
 
 img {
     padding: 10px;
-    width: 40%;
+    width: 30%;
 }
 
+
 footer {
-    background-color: aliceblue;
+    background-color: gold;
     padding: 30px;
     text-align: center;
     font-weight: bold;
 }
 
 footer p {
-    background-color: white
+    background-color: red
 }
 
 @media screen and (max-width:620px) {
@@ -79,7 +83,7 @@ footer p {
         gap: 0;
     }
 
-    h3 {
+    .box {
         list-style: none;
         flex: 1;
         padding: 0;
