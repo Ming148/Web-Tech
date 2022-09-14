@@ -1,0 +1,107 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aliceblue;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    background: white;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h3 {
+    display: block;
+    padding: 1em 4em;
+    font-weight: 500;
+    color: black;
+    background-color: #FF1900;
+}
+a {
+    color: gold;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.about {
+    display: flex;
+    padding: 10px;
+}
+
+img {
+    padding: 10px;
+    width: 40%;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
+    background-color: white
+}
+
+@media screen and (max-width:620px) {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3em;
+        gap: 0;
+    }
+
+    h3 {
+        list-style: none;
+        flex: 1;
+        padding: 0;
+        color: white;
+    }
+
+    a {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    header {
+        margin-top: 3em;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
