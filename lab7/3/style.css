@@ -1,0 +1,23 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+form {
+    padding: 10em;
+}
+
+textarea {
+    width: 50%;
+}
+
+.form-group, .form-group-check {
+    margin-bottom: 1em;
+}
+
+#address {
+    width: 50%;
+}
+
+#age {
+    width: 10%;
+}
