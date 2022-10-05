@@ -1,7 +1,11 @@
 * {
     font-family: 'Prompt', sans-serif;
+    
 }
 
+h2 {
+    padding: 10px;
+}
 form {
     padding: 10em;
 }

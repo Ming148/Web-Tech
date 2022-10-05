@@ -19,7 +19,7 @@
         <h2>Member Registration</h2>
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="name" class="form-control" id="name" name="name" >
+            <input type="name" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
             <label for="address">Address:</label>
@@ -35,7 +35,8 @@
         </div>
         <div class="form-group-check">
             <label for="residentialStatus">Residential status:</label><br>
-            <input class="form-check-input" type="radio" name="residentStatus" id="residentStatus" value="resident" checked>
+            <input class="form-check-input" type="radio" name="residentStatus" id="residentStatus" value="resident"
+                checked>
             <label class="form-check-label" for="resident">
                 Resident
             </label>
@@ -47,5 +48,36 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </body>
+<?php
+
+        if(isset($_POST['name'])){
+            $name = $_POST["name"];
+            if(strlen($name) < 5){
+                echo '<script>alert("***ให้ใส่ค่าที่กรอกไว้ใน FORM ด้วย ***")</script>';
+            }
+        }
+        if(isset($_POST['address'])){
+            $address = $_POST["address"];
+            if(strlen($address) < 5){
+                echo '<script>alert("***ให้ใส่ค่าที่กรอกไว้ใน FORM ด้วย ***")</script>';
+            }
+        }
+        if(isset($_POST['age'])){
+            $age = $_POST["age"];
+            if(strlen($age) < 2){
+                echo '<script>alert("***ให้ใส่ค่าที่กรอกไว้ใน FORM ด้วย ***")</script>';
+            }
+        }
+        if(isset($_POST['profession'])){
+            $profession = $_POST["profession"];
+            if(strlen($profession) < 5){
+                echo '<script>alert("***ให้ใส่ค่าที่กรอกไว้ใน FORM ด้วย ***")</script>';
+            }
+        }
+        if(!(isset($_POST['residentialStatu']))){
+                echo '<script>alert("***ให้ใส่ค่าที่กรอกไว้ใน FORM ด้วย ***")</script>';
+            }
+
+    ?>
 
 </html>
