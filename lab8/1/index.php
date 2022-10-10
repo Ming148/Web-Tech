@@ -41,7 +41,7 @@
             $from = $_POST['from'];
             $to = $_POST['to'];
             $money = $_POST['money'];
-            echo number_format((float)$money / $from * $to, 2, '.', '');
+            echo round(($money / $from * $to), 2);
         }
         ?>">
         <br>
