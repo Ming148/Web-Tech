@@ -66,6 +66,10 @@
         
         // Close database 
         $db->close();
+
+
+        // Close database 
+        $db->close();
     ?>
 </body>
 
